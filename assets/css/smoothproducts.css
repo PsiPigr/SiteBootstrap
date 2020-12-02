@@ -173,3 +173,23 @@ html, body {
   }
 }
 
+.clean-block.clean-form form {
+  border-top: 2px solid #a9f35e;
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.075);
+}
+
+.clean-block .block-heading h1, .clean-block .block-heading h2, .clean-block .block-heading h3 {
+}
+
+.text-info {
+  color: #61ff17;
+}
+
+.text-info {
+  color: #5ce03b!important;
+}
+
