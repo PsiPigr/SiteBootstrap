@@ -10,18 +10,32 @@ function registar(){
         const password = registar["password_registar"].value
         
         auth.createUserWithEmailAndPassword(email, password).then(cred => {
-            console.log(cred.user)
+            // console.log(cred.user)
 
             // Simulate a mouse click:
             window.location.href = "login.html";
 
         })
 
-
     })
 }
 
+
 function login(){
 
+    const login = document.querySelector("#form_login")
+    login.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        const email = login['email_login'].value
+        const password = login['password_login'].value
+
+        auth.signInWithEmailAndPassword(email, password).then(cred => {
+            console.log(cred.user)
+
+            window.location.href = "index.html";
+
+        })
+    })
 }
 
