@@ -1,11 +1,27 @@
-const registar = document.querySelector("#form_registar");
-registar.addEventListener('submit', (e) => {
-    e.preventDefault();
-    //console.log(registar['nome_registar'].value);
+const auth = firebase.auth()
 
-    //const email = registar["email_registar"].value;
-    const password = document.getElementById("password_registar").value;
+function registar(){
 
-    window.alert(" "+password); 
+    const registar = document.querySelector("#form_registar")
+    registar.addEventListener('submit', (e) => {
+        e.preventDefault()
 
-});
+        const email = registar["email_registar"].value
+        const password = registar["password_registar"].value
+        
+        auth.createUserWithEmailAndPassword(email, password).then(cred => {
+            console.log(cred.user)
+
+            // Simulate a mouse click:
+            window.location.href = "login.html";
+
+        })
+
+
+    })
+}
+
+function login(){
+
+}
+
