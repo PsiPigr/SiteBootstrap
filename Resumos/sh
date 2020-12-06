@@ -1,0 +1,11 @@
+#!/bin/sh
+convert filosofia11ano/* pdfs/filosofia11ano.pdf
+convert filosofia11ano2/* pdfs/filosofia11ano2.pdf
+convert fq9ano1/* pdfs/fq9ano1.pdf
+convert fq9ano2/* pdfs/fq9ano2.pdf
+convert geografia9ano/* pdfs/geografia9ano.pdf
+convert geografia9ano2/* pdfs/geografia9ano2.pdf
+convert geologia10ano/* pdfs/geologia10ano.pdf
+convert portugues9ano/* pdfs/portugues9ano.pdf
+convert portugues9anoAutoBarca/* pdfs/portugues9anoAutoBarca.pdf
+convert portugues9anoLusiadas/* pdfs/portugues9anoLusiadas.pdf
