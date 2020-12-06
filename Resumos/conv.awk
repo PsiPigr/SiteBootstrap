@@ -1,2 +1,6 @@
 #!/bin/awk -f
-{print "convert "$1"/* pdfs/"$1".pdf"}
+{
+    system("rm file.txt");
+    system("ls >> file.txt");
+    system("convert "$1"/*.jpeg pdfs/"$1".pdf");
+}
